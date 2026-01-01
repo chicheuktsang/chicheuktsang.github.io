@@ -1,26 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chi Cheuk Tsang</title>
+  <title>Chi Cheuk Tsang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0052cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #0b3d91;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    .footer {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 0.9em;
+      color: grey;
+    }
+    .two-column {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile-friendly: stack columns */
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+  </style>
 </head>
 <body>
-
+<h1>Chi Cheuk Tsang</h1>
+  
+<div class="two-column">
+<div class="left">
+  
 <p>I am a CRM-Simons postdoctoral fellow based at Université du Québec à Montréal.</p>
-
-<p>My research lies in the intersection of low-dimensional topology and dynamics. My interests include flows and foliations on 3-manifolds, homeomorphisms of surfaces, and related topics. You can find a list of my preprints and publications here.</p>
-
+<p>My research lies in the intersection of low-dimensional topology and dynamics. 
+  My interests include flows and foliations on 3-manifolds, homeomorphisms of surfaces, and related topics. 
+  You can find a list of my preprints and publications here.</p>
 <p>I received my PhD at UC Berkeley under the supervision of Ian Agol.</p>
-
 <p>In Spring 2026, I will be a McDuff endowed postdoctoral fellow at SLMath.</p>
-
 <p>I am currently on the job market for a position starting in Fall 2026!</p>
-
-<p>You can find my CV here (last updated: 19 Sep 2025).</p>
-
-
+<p>You can find my <a href="https://drive.google.com/file/d/1h7i3XDsBMGqc9rPqpHT4qxTFVw9woFIN/view?usp=sharing">CV<\a> here (last updated: 19 Sep 2025).</p>
+<br>
 <p>Office: PK-5220</p>
-
 <p>Email: chicheuk [at] hotmail.com</p>
+
+<\div>
+
+
+<div class="right">
+  <img class="profile-image" src="montreal2023.jpeg">
+</div>
   
 </body>
 </html>
