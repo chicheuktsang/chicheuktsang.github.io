@@ -23,7 +23,8 @@ body {
   max-width: 900px;
   margin: 0 auto;
   display: flex;
-  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 16px;
 }
 
