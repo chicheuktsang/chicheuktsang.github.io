@@ -52,8 +52,8 @@ body {
 }
 
 .nav a.active {
-  color: #1a73e8;
-  border-bottom-color: #1a73e8;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
   font-weight: 500;
 }
 
@@ -77,7 +77,7 @@ body {
 
 .right {
   flex: 1;
-  text-align: center;
+  text-align: right;
 }
 
 .right img {
