@@ -27,6 +27,18 @@ body {
   padding: 14px 16px;
 }
 
+.nav-name {
+  /* font-family: Arial, sans-serif; */
+  font-size: 18px;
+  font-weight: 500;
+  color: #202124; /* Google dark text */
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
 .nav a {
     color: white;
     margin: 0 15px;
