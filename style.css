@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0 50px;
+  padding: 0;
   background: #f9f9f9;
   color: #333;
 }
@@ -106,4 +106,4 @@ body {
     margin: 40px 0 20px 0;
     font-size: 0.9em;
     color: grey; */
-}
+/* } */
