@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 50px;
   background: #f9f9f9;
   color: #333;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .nav-name {
-  /* font-family: Arial, sans-serif; */
+  font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #202124; /* Google dark text */
@@ -91,7 +91,7 @@ body {
     flex-direction: column;
   }
 }
-
+/* 
 .profile-image {
   width: 150px;
   height: 150px;
@@ -99,11 +99,11 @@ body {
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
-}
+} */
 
-.footer {
+/* .footer {
     text-align: center;
     margin: 40px 0 20px 0;
     font-size: 0.9em;
-    color: grey;
+    color: grey; */
 }
