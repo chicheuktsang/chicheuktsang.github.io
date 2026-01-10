@@ -14,11 +14,11 @@ body {
 }
 
 .nav {
-  /* background: #0b3d91; */
+  background: #0b3d91;
   /* background: #ffffff; border-bottom: 1px solid #e0e0e0; */
   /* background: #f7f9fc; border-bottom: 1px solid #dfe3eb; */
   /* background: #ffffff; border-bottom: 3px solid #1a73e8; */
-  background: #ffffff;
+  /* background: #ffffff; */
   border-bottom: 1px solid #e0e0e0;
   padding: 10px;
   text-align: center;
@@ -34,7 +34,7 @@ body {
 
 .nav-name {
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #202124; /* Google dark text */
 }
@@ -45,11 +45,11 @@ body {
 }
 
 .nav a {
-  /* color: white; */
+  color: white;
   /* margin: 0 15px; */
   /* text-decoration: none; */
   /* font-weight: bold; */
-  color: #5f6368; /* Google gray */
+  /* color: #5f6368; Google gray */
   text-decoration: none;
   padding-bottom: 6px;
   border-bottom: 2px solid transparent;
@@ -61,17 +61,17 @@ body {
 }
 
 .nav a.active {
-  /* color: #ffffff;
+  color: #ffffff;
   border-bottom-color: #ffffff;
-  font-weight: 500; */
-  color: #1a73e8;
-  border-bottom-color: #1a73e8;
   font-weight: 500;
+  /* color: #1a73e8;
+  border-bottom-color: #1a73e8;
+  font-weight: 500; */
 }
 
 .container {
   /* max-width: 1500px; */
-  font-size: 16pt;
+  font-size: 14pt;
   margin: 30px 50px;
   padding: 50px;
   background: white;
