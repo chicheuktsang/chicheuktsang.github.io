@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 20px;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -72,6 +71,7 @@ body {
 
 .container {
   /* max-width: 1500px; */
+  font-size: 16pt;
   margin: 30px 50px;
   padding: 50px;
   background: white;
