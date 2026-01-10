@@ -15,10 +15,10 @@ body {
 }
 
 .nav {
-  /* background: #0b3d91;
-  background: #ffffff; border-bottom: 1px solid #e0e0e0;
-  background: #f7f9fc; border-bottom: 1px solid #dfe3eb; */
-  background: #ffffff; border-bottom: 3px solid #1a73e8;
+  /* background: #0b3d91; */
+  /* background: #ffffff; border-bottom: 1px solid #e0e0e0; */
+  background: #f7f9fc; border-bottom: 1px solid #dfe3eb;
+  /* background: #ffffff; border-bottom: 3px solid #1a73e8; */
   padding: 10px;
   text-align: center;
 }
