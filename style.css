@@ -17,20 +17,13 @@ body {
 .nav {
   /* background: #0b3d91; */
   /* background: #ffffff; border-bottom: 1px solid #e0e0e0; */
-  background: #f7f9fc; border-bottom: 1px solid #dfe3eb;
+  /* background: #f7f9fc; border-bottom: 1px solid #dfe3eb; */
   /* background: #ffffff; border-bottom: 3px solid #1a73e8; */
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   padding: 10px;
   text-align: center;
 }
-
-/* Option A */
-/* .nav {  } */
-
-/* Option B */
-/* .nav {  } */
-
-/* Option C */
-/* .nav { b } */
 
 .nav-inner {
   margin: 0 auto;
@@ -53,10 +46,15 @@ body {
 }
 
 .nav a {
-  color: white;
-  margin: 0 15px;
+  /* color: white; */
+  /* margin: 0 15px; */
+  /* text-decoration: none; */
+  /* font-weight: bold; */
+  color: #5f6368; /* Google gray */
   text-decoration: none;
-  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav a:hover {
@@ -64,8 +62,11 @@ body {
 }
 
 .nav a.active {
-  color: #ffffff;
+  /* color: #ffffff;
   border-bottom-color: #ffffff;
+  font-weight: 500; */
+  color: #1a73e8;
+  border-bottom-color: #1a73e8;
   font-weight: 500;
 }
 
