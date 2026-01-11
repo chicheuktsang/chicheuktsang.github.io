@@ -154,6 +154,12 @@ body {
   align-items: stretch;
 }
 
+.nav-links a {
+  font-size: 14pt;
+  display: flex;
+  align-items: stretch;
+}
+
 /* LINKS */
 .nav a {
   display: flex;
@@ -163,7 +169,7 @@ body {
   padding: 0 18px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 14pt;
+  /* font-size: 14pt; */
 
   background: transparent;
   transition: background-color 0.15s ease, color 0.15s ease;
