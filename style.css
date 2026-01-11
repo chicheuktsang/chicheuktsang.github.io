@@ -132,6 +132,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background: #333333;
 }
 
 /* SITE NAME */
