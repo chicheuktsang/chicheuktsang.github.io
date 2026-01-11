@@ -37,8 +37,8 @@ body {
   align-items: center;
   justify-content: space-between; */
     width: 100%;
-    min-height: 64px;
-  padding: 0 32px;              /* vertical padding removed */
+    min-height: 50px;
+  padding: 0 20px;              /* vertical padding removed */
   box-sizing: border-box;
   display: flex;
   align-items: stretch;         /* key: full-height children */
