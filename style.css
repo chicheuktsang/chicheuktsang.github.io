@@ -13,7 +13,7 @@ body {
 
 /* INNER CONTAINER */
 .nav-inner {
-  height: 60px;                /* fixed height: crucial */
+  height: 60px; 
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
