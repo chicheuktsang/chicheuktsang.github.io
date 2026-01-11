@@ -114,6 +114,9 @@ body {
   /* padding: 8px 14px; */
 }
 
+.nav-links { outline: 2px solid red; }
+.nav a { outline: 2px solid blue; }
+
 .container {
   font-size: 14pt;
   margin: 30px 50px;
