@@ -76,8 +76,14 @@ body {
 
 .container {
   font-size: 14pt;
-  margin: 30px 20px;
-  padding: 50px;
+  margin: 30px 50px;
+  padding: 0px 50px;
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds 10px of space between each li element */
 }
