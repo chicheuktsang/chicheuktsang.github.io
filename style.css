@@ -18,8 +18,10 @@ body {
   border-bottom: 1px solid #e0e0e0;
   padding: 10px;
   text-align: center; */
-    background: #2b2b2b;            /* dark gray */
+    /* background: #2b2b2b;            dark gray */
+    background: #333333;
   border-bottom: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .nav-inner {
@@ -84,6 +86,7 @@ body {
     background: #ffffff;
   color: #000000;
   font-weight: 500;
+  padding: 8px 14px;
 }
 
 .container {
