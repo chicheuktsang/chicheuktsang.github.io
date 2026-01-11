@@ -61,7 +61,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 32px;
+  /* gap: 32px; */
   align-items: stretch;
 }
 
