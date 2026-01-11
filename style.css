@@ -47,13 +47,13 @@ body {
 
 .nav-name {
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16pt;
   font-weight: 500;
   /* color: #202124; Google dark text */
 }
 
 .nav-name a {
-  font-size: 18px;
+  font-size: 16pt;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
@@ -77,7 +77,7 @@ body {
   padding: 6px 10px;
   border-radius: 4px;
   transition: background-color 0.2s ease, color 0.2s ease; */
-    font-size: 15px;
+    font-size: 14pt;
   color: #ffffff;
   text-decoration: none;
   padding: 0 16px;              /* horizontal padding only */
