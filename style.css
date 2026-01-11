@@ -82,7 +82,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-ul {
+.vspaced {
   display: flex;
   flex-direction: column;
   gap: 10px; /* Adds 10px of space between each li element */
