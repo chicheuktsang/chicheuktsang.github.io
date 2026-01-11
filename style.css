@@ -92,8 +92,13 @@ body {
   color: #1a73e8; /* Google blue */
 /* } */ */
 
-.nav a:hover:not(.active) {
+/* .nav a:hover:not(.active) {
   /* background: rgba(255, 255, 255, 0.15); */
+  /* background: #ffffff;
+  color: #000000;
+} */ */
+
+.nav a:hover {
   background: #ffffff;
   color: #000000;
 }
