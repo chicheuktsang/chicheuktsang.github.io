@@ -7,7 +7,7 @@
 
 <body>
 
-<nav class="nav">
+<!-- <nav class="nav">
   <div class="nav-inner">
     <div class="nav-name">
       <a href="index.html">Chi Cheuk Tsang (曾之卓)</a>
@@ -32,10 +32,19 @@
           <a href="Teaching/2024 Winter MAT993V/2024_Winter_MAT993V.html">2024 Winter</a>
         </div>
       </div>
-      <!-- <a href="resources.html">Resources</a> -->
     </div>
   </div>
-</nav>
+</nav> -->
+
+<div id="nav-placeholder"></div>
+
+<script>
+  fetch('/nav.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    });
+</script>
 
 <div class="container">
   
@@ -70,6 +79,9 @@ Email: chicheuk [at] hotmail.com
 
 </p>
 </div>
+
+
+
 
 </body>
 </html>
