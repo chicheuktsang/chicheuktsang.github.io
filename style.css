@@ -82,6 +82,17 @@ body {
   align-items: stretch;
 }
 
+.nav-item > a::after {
+  content: "▾";
+  font-size: 12px;
+  color: inherit;
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* ---------- DROPDOWN MENU ---------- */
 
 .dropdown {
@@ -99,7 +110,7 @@ body {
   z-index: 1000;
 
   transition: opacity 0.12s ease;
-  min-width: 100%;
+  /* min-width: 100%; */
 }
 
 /* ---------- DROPDOWN LINKS ---------- */
