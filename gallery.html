@@ -25,6 +25,7 @@
 <div class="gallery-container">
   <!-- Left menu -->
   <div class="menu">
+    <h3>2025</h3>
     <a href="#" data-img="Research sketches/apr2020.jpg" class="active">Figure 1</a>
     <a href="#" data-img="Research sketches/apr2021_1.jpg">Figure 2</a>
     <a href="#" data-img="Research sketches/apr2021_2.jpg">Figure 3</a>
@@ -33,7 +34,8 @@
 
   <!-- Right display -->
   <div class="display">
-    <img id="main-image" src="images/apr_2020.jpg" alt="Gallery Image">
+    <img id="main-image" src="Research sketches/apr2020.jpg" alt="Gallery Image">
+    <div id="caption"></div>
   </div>
 </div>
 
@@ -54,6 +56,14 @@
       const imgSrc = this.getAttribute('data-img');
       mainImage.src = imgSrc;
     });
+  });
+
+  document.addEventListener('keydown', (e) => {
+  const active = document.querySelector('.menu a.active');
+  let next;
+  if (e.key === 'ArrowDown') next = active.nextElementSibling;
+  if (e.key === 'ArrowUp') next = active.previousElementSibling;
+  if (next) next.click();
   });
 </script>
 
