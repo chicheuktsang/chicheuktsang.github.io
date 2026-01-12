@@ -94,7 +94,7 @@ body {
 
 .gallery-container {
       display: flex;
-      height: 100vh; /* Full viewport height */
+      height: calc(100vh - 60px);
     }
 
 /* Left menu (list of items) */
