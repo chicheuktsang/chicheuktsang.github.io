@@ -99,6 +99,7 @@ body {
   z-index: 1000;
 
   transition: opacity 0.12s ease;
+  min-width: 100%;
 }
 
 /* ---------- DROPDOWN LINKS ---------- */
