@@ -98,7 +98,7 @@ body {
   position: absolute;
   right: 14px;
   top: 50%;
-  transform: translateY(-60%) rotate(45deg);
+  transform: translateY(-75%) rotate(45deg);
 }
 
 /* ---------- DROPDOWN MENU ---------- */
@@ -118,13 +118,13 @@ body {
   z-index: 1000;
 
   transition: opacity 0.12s ease;
-  /* min-width: 100%; */
+  min-width: 100%;
 }
 
 /* ---------- DROPDOWN LINKS ---------- */
 
 .dropdown a {
-  padding: 10px 14px;
+  padding: 16px 14px;
   font-size: 12pt;
   color: #000000;
   text-decoration: none;
