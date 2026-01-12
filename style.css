@@ -134,10 +134,16 @@ body {
     align-items: center;
     background: #fff;
     box-sizing: border-box;
+
+    overflow: hidden;   /* 🔑 prevents scrollbars */
 }
 
 .display img {
     max-width: 100%;
     max-height: 100%;
     border: 1px solid #ccc;
+
+
+  width: auto;
+  height: auto;
 }
