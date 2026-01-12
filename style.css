@@ -230,11 +230,11 @@ body {
 /* ---------- CAPTION (menu-like behavior) ---------- */
 
 .caption {
-  height: 120px;          /* ← fixed size (adjust freely) */
+  height: 60px;          /* ← fixed size (adjust freely) */
   margin-top: 12px;
-  padding: 10px 14px;
+  padding: 10px 10px;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   color: #333;
 
