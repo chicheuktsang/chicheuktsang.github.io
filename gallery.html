@@ -165,10 +165,10 @@
   <!-- Right display -->
   <div class="display">
     <div class="image-area">
-        <img id="main-image" src="Research sketches/2025-11-2.jpg" alt="">
+        <!-- <img id="main-image" src="Research sketches/2025-11-2.jpg" alt=""> -->
     </div>
     <div class="caption" id="caption">
-        Caption.
+        <!-- Caption. -->
     </div>
   </div>
 </div>
@@ -186,7 +186,7 @@
       // Remove "active" from all, set on clicked
       links.forEach(l => l.classList.remove('active'));
       this.classList.add('active');
-      
+
       mainImage.src = this.dataset.img;
       caption.textContent = this.dataset.caption || '';
     });
@@ -195,8 +195,8 @@
   document.addEventListener('keydown', (e) => {
   const active = document.querySelector('.menu a.active');
   let next;
-  if (e.key === 'ArrowDown') next = active.nextElementSibling;
-  if (e.key === 'ArrowUp') next = active.previousElementSibling;
+  if (e.key === 'ArrowRight') next = active.nextElementSibling;
+  if (e.key === 'ArrowLeft') next = active.previousElementSibling;
   if (next) next.click();
   });
 </script>
