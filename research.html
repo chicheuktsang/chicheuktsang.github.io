@@ -7,20 +7,15 @@
 
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-name">
-      <a href="index.html">Chi Cheuk Tsang (曾之卓)</a>
-    </div>
+<div id="nav-placeholder"></div>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <!-- <a href="resources.html">Resources</a> -->
-    </div>
-  </div>
-</nav>
+<script>
+  fetch('/nav.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    });
+</script>
 
 <div class="container">
   <p>
