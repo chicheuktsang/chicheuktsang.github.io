@@ -106,6 +106,15 @@ body {
     box-sizing: border-box;
 }
 
+.menu h3 {
+  margin: 16px 0 8px;     /* vertical spacing only */
+  padding: 0 16px;       /* align with menu links */
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
 .menu a {
     display: block;
     padding: 10px 16px;
@@ -126,7 +135,7 @@ body {
 }
 
 /* Right display window */
-.display {
+/* .display {
     flex: 1;
     padding: 20px;
     display: flex;
@@ -136,9 +145,10 @@ body {
     box-sizing: border-box;
 
     overflow: hidden;   /* 🔑 prevents scrollbars */
-}
+/* } */
+ */
 
-.display img {
+/* .display img {
     max-width: 100%;
     max-height: 100%;
     border: 1px solid #ccc;
@@ -146,4 +156,41 @@ body {
 
   width: auto;
   height: auto;
+}
+ */
+
+.display {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.image-area {
+  flex: 1;                         /* take remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-area img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.caption {
+  margin-top: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #333;
+
+  border-top: 1px solid #ddd;
+  background: #fafafa;
 }

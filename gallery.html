@@ -26,7 +26,9 @@
   <!-- Left menu -->
   <div class="menu">
     <h3>   2025</h3>
-    <a href="#" data-img="Research sketches/apr2020.jpg" class="active">Figure 1</a>
+    <a href="#" data-img="Research sketches/apr2020.jpg" 
+    data-caption="Invariant foliations for an Anosov flow"
+    class="active">Figure 1</a>
     <a href="#" data-img="Research sketches/apr2021_1.jpg">Figure 2</a>
     <a href="#" data-img="Research sketches/apr2021_2.jpg">Figure 3</a>
     <a href="#" data-img="Research sketches/apr2022_1.jpg">Figure 4</a>
@@ -34,8 +36,14 @@
 
   <!-- Right display -->
   <div class="display">
-    <img id="main-image" src="Research sketches/apr2020.jpg" alt="Gallery Image">
-    <div id="caption"></div>
+    <!-- <img id="main-image" src="Research sketches/apr2020.jpg" alt="Gallery Image">
+    <div id="caption"></div> -->
+    <div class="image-area">
+    <img id="main-image" src="Research sketches/apr2020.jpg" alt="">
+  </div>
+  <div class="caption" id="caption">
+    Caption text goes here.
+  </div>
   </div>
 </div>
 
@@ -43,6 +51,7 @@
   // Get all menu links
   const links = document.querySelectorAll('.menu a');
   const mainImage = document.getElementById('main-image');
+const caption = document.getElementById('caption');
 
   links.forEach(link => {
     link.addEventListener('click', function (evt) {
@@ -52,9 +61,12 @@
       links.forEach(l => l.classList.remove('active'));
       this.classList.add('active');
 
-      // Swap displayed image
-      const imgSrc = this.getAttribute('data-img');
-      mainImage.src = imgSrc;
+    //   // Swap displayed image
+    //   const imgSrc = this.getAttribute('data-img');
+    //   mainImage.src = imgSrc;
+
+          mainImage.src = this.dataset.img;
+    caption.textContent = this.dataset.caption || '';
     });
   });
 
