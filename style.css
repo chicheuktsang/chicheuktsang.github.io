@@ -82,6 +82,11 @@ body {
   align-items: stretch;
 }
 
+.nav-item > a {
+  position: relative;
+  padding-right: 28px;   /* room for arrow */
+}
+
 .nav-item > a::after {
   content: "▾";
   font-size: 12px;
@@ -117,7 +122,7 @@ body {
 
 .dropdown a {
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 12pt;
   color: #000000;
   text-decoration: none;
   white-space: nowrap;
