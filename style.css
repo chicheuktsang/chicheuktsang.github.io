@@ -106,12 +106,12 @@ body {
     box-sizing: border-box;
 }
 
-.menu h3 {
+.menu header {
   margin: 16px 0 8px;     /* vertical spacing only */
-  padding: 0 16px;       /* align with menu links */
-  font-size: 14px;
+  padding: 0 12px;       /* align with menu links */
+  font-size: 20px;
   font-weight: 600;
-  color: #666;
+  color: #333;
   text-transform: uppercase;
 }
 
@@ -193,4 +193,6 @@ body {
 
   border-top: 1px solid #ddd;
   background: #fafafa;
+
+  flex-shrink: 0
 }
