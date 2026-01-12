@@ -199,6 +199,14 @@
   if (e.key === 'ArrowLeft') next = active.previousElementSibling;
   if (next) next.click();
   });
+
+  // Default to first gallery item on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    const firstLink = document.querySelector('.menu a[data-img]');
+    if (firstLink) {
+      firstLink.click();
+    }
+  });
 </script>
 
 </body>
