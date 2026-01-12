@@ -176,7 +176,10 @@
 <script>
   // Get all menu links
   const links = document.querySelectorAll('.menu a');
-  const mainImage = document.getElementById('main-image');
+//   const mainImage = document.getElementById('main-image');
+  const menuLinks = Array.from(
+  document.querySelectorAll('.menu a[data-img]')
+  );
   const caption = document.getElementById('caption');
 
   links.forEach(link => {
@@ -192,12 +195,35 @@
     });
   });
 
+//   document.addEventListener('keydown', (e) => {
+//   const active = document.querySelector('.menu a.active');
+//   let next;
+//   if (e.key === 'ArrowRight') next = active.nextElementSibling;
+//   if (e.key === 'ArrowLeft') next = active.previousElementSibling;
+//   if (next) next.click();
+//   });
+
   document.addEventListener('keydown', (e) => {
   const active = document.querySelector('.menu a.active');
-  let next;
-  if (e.key === 'ArrowRight') next = active.nextElementSibling;
-  if (e.key === 'ArrowLeft') next = active.previousElementSibling;
-  if (next) next.click();
+  if (!active) return;
+
+  const index = menuLinks.indexOf(active);
+  if (index === -1) return;
+
+  let nextIndex = null;
+
+  if (e.key === 'ArrowRight') {
+    nextIndex = Math.min(index + 1, menuLinks.length - 1);
+  }
+
+  if (e.key === 'ArrowLeft') {
+    nextIndex = Math.max(index - 1, 0);
+  }
+
+  if (nextIndex !== null && nextIndex !== index) {
+    menuLinks[nextIndex].click();
+    e.preventDefault();
+  }
   });
 
   // Default to first gallery item on page load
