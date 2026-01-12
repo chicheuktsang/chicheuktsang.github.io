@@ -84,18 +84,21 @@ body {
 
 .nav-item > a {
   position: relative;
-  padding-right: 28px;   /* room for arrow */
+  padding-right: 36px;   /* room for arrow */
 }
 
 .nav-item > a::after {
-  content: "▾";
-  font-size: 12px;
-  color: inherit;
+  content: "";
+  width: 8px;
+  height: 8px;
+
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
 
   position: absolute;
-  right: 10px;
+  right: 14px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-60%) rotate(45deg);
 }
 
 /* ---------- DROPDOWN MENU ---------- */
