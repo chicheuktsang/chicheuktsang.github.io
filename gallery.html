@@ -22,6 +22,41 @@
   </div>
 </nav>
 
+<div class="gallery-container">
+  <!-- Left menu -->
+  <div class="menu">
+    <a href="#" data-img="Research sketches/apr2020.jpg" class="active">Figure 1</a>
+    <a href="#" data-img="Research sketches/apr2021_1.jpg">Figure 2</a>
+    <a href="#" data-img="Research sketches/apr2021_2.jpg">Figure 3</a>
+    <a href="#" data-img="Research sketches/apr2022_1.jpg">Figure 4</a>
+  </div>
+
+  <!-- Right display -->
+  <div class="display">
+    <img id="main-image" src="images/apr_2020.jpg" alt="Gallery Image">
+  </div>
+</div>
+
+<script>
+  // Get all menu links
+  const links = document.querySelectorAll('.menu a');
+  const mainImage = document.getElementById('main-image');
+
+  links.forEach(link => {
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      // Remove "active" from all, set on clicked
+      links.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+
+      // Swap displayed image
+      const imgSrc = this.getAttribute('data-img');
+      mainImage.src = imgSrc;
+    });
+  });
+</script>
+
 </body>
 
 </html>

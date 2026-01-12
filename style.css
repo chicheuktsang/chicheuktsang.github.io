@@ -87,3 +87,57 @@ body {
   flex-direction: column;
   gap: 10px; /* Adds 10px of space between each li element */
 }
+
+
+
+
+
+.gallery-container {
+      display: flex;
+      height: 100vh; /* Full viewport height */
+    }
+
+/* Left menu (list of items) */
+.menu {
+    width: 220px;
+    background: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.menu a:hover {
+    background: #e0e0e0;
+}
+
+.menu a.active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* Right display window */
+.display {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.display img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #ccc;
+}
