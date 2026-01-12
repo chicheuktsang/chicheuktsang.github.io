@@ -74,6 +74,61 @@ body {
   font-weight: 500;
 }
 
+/* ---------- DROPDOWN CONTAINER ---------- */
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+/* ---------- DROPDOWN MENU ---------- */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  min-width: 180px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+
+  transition: opacity 0.12s ease;
+}
+
+/* ---------- DROPDOWN LINKS ---------- */
+
+.dropdown a {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown a:hover {
+  background: #f0f0f0;
+}
+
+/* ---------- SHOW DROPDOWN ON HOVER ---------- */
+
+.nav-item:hover .dropdown {
+  display: flex;
+}
+
+/* ---------- KEEP TOP TAB HIGHLIGHTED ---------- */
+
+.nav-item:hover > a {
+  background: #ffffff;
+  color: #000000;
+}
+
+
 .container {
   font-size: 14pt;
   margin: 30px 50px;
@@ -134,69 +189,6 @@ body {
     background: #ddd;
     font-weight: bold;
 }
-
-/* Right display window */
-/* .display {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    box-sizing: border-box;
-
-    overflow: hidden; 
-} */
-
-/* .display img {
-    max-width: 100%;
-    max-height: 100%;
-    border: 1px solid #ccc;
-
-
-  width: auto;
-  height: auto;
-}
- */
-
-/* .display {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-
-  overflow: hidden;
-}
-
-.image-area {
-  flex: 1;               
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.image-area img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.caption {
-  margin-top: 12px;
-  padding: 10px 14px;
-  font-size: 14px;
-  color: #333;
-
-  border-top: 1px solid #ddd;
-  background: #fafafa;
-
-  flex-shrink: 0
-} 
-*/
 
 .display {
   flex: 1;
